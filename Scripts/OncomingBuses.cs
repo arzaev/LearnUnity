@@ -2,22 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class spawnObstacles : MonoBehaviour
+public class OncomingBuses : MonoBehaviour
 {
-
-    private Vector3 pos = new Vector3(0, 5, -7);
-    public GameObject obstacle;
+    private float speed = 30f;
 
     // Start is called before the first frame update
     void Start()
     {
-        GameObject a = Instantiate(obstacle, pos, Quaternion.identity);
+        
     }
-
 
     // Update is called once per frame
     void Update()
     {
-        
+        transform.Translate(Vector3.forward * Time.deltaTime * speed);
     }
 }
