@@ -22,7 +22,7 @@ public class PlayerController : MonoBehaviour
     {
         for (int i = 0; i < 20; i++)
         {
-            var position = new Vector3(Random.Range(1f, 2f), 1, Random.Range(10.0f, 170.0f));
+            var position = new Vector3(Random.Range(1f, 2f), 1, Random.Range(10.0f, 270.0f));
             Instantiate(obstacle, position, Quaternion.identity);
         }
     }
